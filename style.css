@@ -1,12 +1,8 @@
-.top-section {
-    background: #1F2937;
-}
-
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 10px 10px 10px;
+/*    margin: 10px 10px 10px 10px; */
     font-size: 24px;
     color: #F9FAF8;
 }
@@ -20,4 +16,46 @@ ul {
 li {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.hero-section {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 50px;
+}
+
+.hero-section, .header {
+    background: #1F2937;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-right {
+    flex: none;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 10px;
+}
+
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 5px 25px 5px 25px;
 }
