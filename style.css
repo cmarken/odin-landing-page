@@ -25,6 +25,7 @@
 
 .header, .hero-section {
     width: 800px;
+    flex: 1;
 }
 
 ul {
