@@ -1,10 +1,30 @@
+.header-hero-container, .hero-section, .header {
+    background-color: #1F2937;
+}
+
+.header-hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-/*    margin: 10px 10px 10px 10px; */
     font-size: 24px;
     color: #F9FAF8;
+}
+
+.hero-section {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 50px;
+}
+
+.header, .hero-section {
+    width: 800px;
 }
 
 ul {
@@ -16,17 +36,6 @@ ul {
 li {
     font-size: 18px;
     color: #E5E7EB;
-}
-
-.hero-section {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    gap: 50px;
-}
-
-.hero-section, .header {
-    background: #1F2937;
 }
 
 .hero-left {
