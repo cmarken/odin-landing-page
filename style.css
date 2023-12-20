@@ -24,7 +24,7 @@
     gap: 50px;
 }
 
-ul {
+.header > ul {
     display: flex;
     list-style-type: none;
     gap: 20px;
