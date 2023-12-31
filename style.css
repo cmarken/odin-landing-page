@@ -1,16 +1,41 @@
 .hero-container, .header-container, 
-.section-2-title-container, .section-2-cards-container {
+.section-2-title-container, .section-2-cards-container, .quote-container {
     display: flex;
     justify-content: center;
     background-color: #1F2937;
-}
+}   
 
 .section-2-title-container, .section-2-cards-container {
     background-color: #FFFFFF;
 }
 
+.quote-container {
+    padding: 50px 0 50px 0;
+    background-color: #E5E7EB;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header, .hero, .section-2-title, .section-2-cards {
-    flex: 0 1 800px;
+    flex: 0 1 1000px;
+}
+
+.quote-text, .quote-author {
+    flex: 0 1;
+    width: 800px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author {
+    font-size: 24px;
+    text-align: right;
+    font-weight: bold;
 }
 
 .header {
@@ -25,7 +50,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     gap: 50px;
 }
 
@@ -84,6 +109,7 @@ button {
 .section-2-cards {
     flex-wrap: wrap;
     gap: 40px;
+    padding-bottom: 80px;
 }
 
 .card {
