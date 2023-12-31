@@ -1,10 +1,15 @@
-.hero-container, .header-container {
+.hero-container, .header-container, 
+.section-2-title-container, .section-2-cards-container {
     display: flex;
     justify-content: center;
     background-color: #1F2937;
 }
 
-.header, .hero {
+.section-2-title-container, .section-2-cards-container {
+    background-color: #FFFFFF;
+}
+
+.header, .hero, .section-2-title, .section-2-cards {
     flex: 0 1 800px;
 }
 
@@ -63,4 +68,9 @@ button {
     border-radius: 8px;
     border-width: 0;
     padding: 5px 25px 5px 25px;
+}
+
+.section-2-title, .section-2-cards {
+    display: flex;
+    justify-content: center;
 }
