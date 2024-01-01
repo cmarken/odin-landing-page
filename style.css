@@ -1,6 +1,6 @@
 .hero-container, .header-container, 
 .section-2-title-container, .section-2-cards-container, 
-.quote-container, .cta-container {
+.quote-container, .cta-container, .footer-container {
     display: flex;
     justify-content: center;
     background-color: #1F2937;
@@ -19,6 +19,13 @@
 
 .cta-container {
     padding: 50px 0 50px 0;
+}
+
+.footer {
+    color: #E5E7EB;
+    text-align: center;
+    font-style: italic;
+    padding: 20px 0 20px 0px;
 }
 
 .cta {
@@ -55,7 +62,6 @@
     border-radius: 8px;
     padding: 5px 25px 5px 25px;
 }
-
 
 .header, .hero, .section-2-title, .section-2-cards {
     flex: 0 1 1000px;
