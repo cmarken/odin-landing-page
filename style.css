@@ -1,6 +1,7 @@
 .hero-container, .header-container, 
 .section-2-title-container, .section-2-cards-container, 
-.quote-container, .cta-container, .footer-container {
+.quote-text-container, .quote-author-container, 
+.cta-container, .footer-container {
     display: flex;
     justify-content: center;
     background-color: #1F2937;
@@ -10,15 +11,27 @@
     background-color: #FFFFFF;
 }
 
-.quote-container {
-    padding: 50px 0 50px 0;
+.quote-text-container, .quote-author-container {
     background-color: #E5E7EB;
-    flex-direction: column;
     align-items: center;
+}
+
+.quote-text-container {
+    padding: 50px 0 0 0;
+}
+
+.quote-author-container {
+    padding: 0 0 50px 0;
 }
 
 .cta-container {
     padding: 50px 0 50px 0;
+}
+
+.header, .hero, .section-2-title, .cta {
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 10px 0 10px;
 }
 
 .footer {
@@ -29,9 +42,7 @@
 }
 
 .cta {
-    flex: 1;
     box-sizing: border-box;
-    max-width: 1000px;
     background-color: #3882F6;
     color: #F9FAF8;
     border-radius: 8px;
@@ -63,19 +74,15 @@
     padding: 5px 25px 5px 25px;
 }
 
-.header, .hero, .section-2-title {
-    flex: 0 1 1000px;
-}
-
 .section-2-cards {
     max-width: 800px;
     justify-content: space-between;
 }
 
 .quote-text, .quote-author {
-    flex: 0 1;
-    width: 800px;
-}
+    flex: 1;
+    max-width: 800px;
+}   
 
 .quote-text {
     font-size: 36px;
@@ -86,6 +93,7 @@
 
 .quote-author {
     font-size: 24px;
+    align-self: flex-end;
     text-align: right;
     font-weight: bold;
 }
