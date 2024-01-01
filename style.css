@@ -1,11 +1,12 @@
 .hero-container, .header-container, 
-.section-2-title-container, .section-2-cards-container, .quote-container {
+.section-2-title-container, .section-2-cards-container, 
+.quote-container, .cta-container {
     display: flex;
     justify-content: center;
     background-color: #1F2937;
 }   
 
-.section-2-title-container, .section-2-cards-container {
+.section-2-title-container, .section-2-cards-container, .cta-container {
     background-color: #FFFFFF;
 }
 
@@ -15,6 +16,46 @@
     flex-direction: column;
     align-items: center;
 }
+
+.cta-container {
+    padding: 50px 0 50px 0;
+}
+
+.cta {
+    flex: 1;
+    box-sizing: border-box;
+    max-width: 1000px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px 20px 100px;
+
+}
+
+.cta-text {
+    flex: 1;
+}
+
+.cta-text > h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.cta-text > p {
+    margin-top: 5px;
+}
+
+.cta-button > button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: 2px solid #F9FAF8;
+    border-radius: 8px;
+    padding: 5px 25px 5px 25px;
+}
+
 
 .header, .hero, .section-2-title, .section-2-cards {
     flex: 0 1 1000px;
@@ -122,6 +163,6 @@ button {
 
 .card > img {
     border: 3px solid blue;
-    border-radius: 8%;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
