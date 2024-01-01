@@ -63,8 +63,13 @@
     padding: 5px 25px 5px 25px;
 }
 
-.header, .hero, .section-2-title, .section-2-cards {
+.header, .hero, .section-2-title {
     flex: 0 1 1000px;
+}
+
+.section-2-cards {
+    max-width: 800px;
+    justify-content: space-between;
 }
 
 .quote-text, .quote-author {
@@ -142,9 +147,13 @@ button {
     padding: 5px 25px 5px 25px;
 }
 
-.section-2-title, .section-2-cards {
+.section-2-title {
+    text-align: center;
+}
+
+.section-2-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .section-2-title > h2 {
