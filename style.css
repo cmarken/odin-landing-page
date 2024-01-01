@@ -18,13 +18,13 @@
 }
 
 .header, .hero, .cta {
+    display: flex;
     flex: 1;
     max-width: 1000px;
     margin: 0 10px 0 10px;
 }
 
 .header {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 24px;
@@ -37,13 +37,12 @@
     gap: 20px;
 }
 
-li {
+.header > ul > li {
     font-size: 18px;
     color: #E5E7EB;
 }
 
 .hero {
-    display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 80px;
@@ -72,12 +71,11 @@ li {
     margin-bottom: 10px;
 }
 
-button {
+.hero-button > button {
     background-color: #3882F6;
     color: #F9FAF8;
-    border-radius: 8px;
-    border-width: 0;
-    padding: 5px 25px 5px 25px;
+    border-style: solid;
+    border-color: #3882F6;
 }
 
 .section-2-title {
@@ -94,12 +92,9 @@ button {
     display: flex;
     max-width: 800px;
     justify-content: space-between;
-}
-
-.section-2-cards {
     flex-wrap: wrap;
     gap: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .card {
@@ -152,7 +147,6 @@ button {
     background-color: #3882F6;
     color: #F9FAF8;
     border-radius: 8px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 100px 20px 100px;
@@ -175,9 +169,8 @@ button {
 .cta-button > button {
     background-color: #3882F6;
     color: #F9FAF8;
-    border: 2px solid #F9FAF8;
-    border-radius: 8px;
-    padding: 5px 25px 5px 25px;
+    border-style: solid;
+    border-color: #F9FAF8;
 }
 
 .footer {
@@ -185,4 +178,10 @@ button {
     text-align: center;
     font-style: italic;
     padding: 20px 0 20px 0px;
+}
+
+button {
+    border-radius: 8px;
+    border-width: 2px;
+    padding: 5px 25px 5px 25px;
 }
